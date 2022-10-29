@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?> <resources>
+
+    <!-- Generic with ratio -->
+    <dimen name="margin_smaller">2dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_card_medium">6dp</dimen>
+    <dimen name="margin_medium">8dp</dimen>
+    <dimen name="margin_medium_2">16dp</dimen>
+    <dimen name="margin_card_medium_2">12dp</dimen>
+    <dimen name="margin_medium_3">20dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="margin_xlarge">32dp</dimen>
+    <dimen name="margin_xxlarge">48dp</dimen>
+    <dimen name="margin_small_n">-4dp</dimen>
+    <dimen name="margin_card_medium_n">-6dp</dimen>
+    <dimen name="margin_medium_n">-8dp</dimen>
+    <dimen name="margin_card_medium_2_n">-12dp</dimen>
+    <dimen name="margin_medium_2_n">-16dp</dimen>
+    <dimen name="margin_medium_3_n">-18dp</dimen>
+    <dimen name="margin_large_n">-24dp</dimen>
+    <dimen name="margin_xlarge_n">-32dp</dimen>
+    <dimen name="text_smaller">10sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_regular">14sp</dimen>
+    <dimen name="text_regular_2x">16sp</dimen>
+    <dimen name="text_regular_2x_medium">18sp</dimen>
+
+    <dimen name="text_regular_3x">20sp</dimen>
+    <dimen name="text_heading_1x">24sp</dimen>
+    <dimen name="text_heading_2x">32sp</dimen>
+    <dimen name="text_big">40sp</dimen>
+    <dimen name="text_big_2x">60sp</dimen>
+    <dimen name="text_big_3x">80sp</dimen>
+
+
+    <!--    App Specific -->
+    <dimen name="size_profile_cover">140dp</dimen>
+    <dimen name="height_profile_margin_100_n">-100dp</dimen>
+    <dimen name="height_calendar_view_pod">45dp</dimen>
+    <dimen name="size_calendar_logo">30dp</dimen>
+    <dimen name="width_timeline_data_section">65dp</dimen>
+    <dimen name="width_timeline_text">25dp</dimen>
+    <dimen name="width_timeline_pipe">3dp</dimen>
+    <dimen name="size_active_status">25dp</dimen>
+    <dimen name="active_status_margin_end">8dp</dimen>
+    <dimen name="active_status_margin_bottom">18dp</dimen>
+    <dimen name="margin_top_profile_text_section">110dp</dimen>
+    <dimen name="padding_profile_button">12dp</dimen>
+    <dimen name="width_message_button">190dp</dimen>
+    <dimen name="height_message_button">58dp</dimen>
+    <dimen name="width_tab">130dp</dimen>
+    <dimen name="width_profile_recyclerview">250dp</dimen>
+    <dimen name="height_client_spinner">45dp</dimen>
+
+
+
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/margin_medium_2"
+    android:layout_marginEnd="@dimen/margin_medium_2"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlHeaderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium_2">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBack"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            app:icon="@drawable/ic_baseline_chevron_left_24"
+            app:rippleColor="@android:color/transparent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/btnBack"
+            android:layout_alignBottom="@id/btnBack"
+            android:layout_toEndOf="@id/btnBack"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:text="@string/lbl_omp_dashboard"
+            android:textSize="@dimen/text_regular_2x"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/btnBack"
+            android:layout_alignBottom="@id/btnBack"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="@color/color_accent_orange"
+            android:text="@string/lbl_in_progress"
+            app:cornerRadius="@dimen/margin_card_medium_2" />
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lblCreateAdditionalPages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlHeaderLayout"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/lbl_create_additional_pages"
+        android:textColor="@color/color_primary"
+        android:textSize="@dimen/text_heading_2x"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lblDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblCreateAdditionalPages"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:fontFamily="@font/roboto_light"
+        android:text="@string/lbl_date"
+        android:textColor="@color/color_dark_grey" />
+
+    <RelativeLayout
+        android:id="@+id/rlProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:layout_below="@id/lblDate"
+        android:background="@color/white">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvProfile"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:outlineProvider="bounds"
+            android:paddingHorizontal="@dimen/margin_medium"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="5"
+            tools:listitem="@layout/view_holder_profile" />
+
+        <com.stone.module16.views.components.CircularProgress
+            android:layout_width="@dimen/margin_xxlarge"
+            android:layout_height="@dimen/margin_xxlarge"
+            android:layout_alignParentEnd="true"
+            app:activeProgressBarColor="@color/color_accent_orange"
+            app:inactiveProgressBarColor="@color/color_accent_orange_50"
+            app:progress="88"
+            app:progressBarThickness="4dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@drawable/bg_task_layout"
+        android:layout_below="@id/rlProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTaskList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/view_holder_task_list"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Module16</string>
+    <string name="lbl_omp_dashboard">OMP DashBoard</string>
+    <string name="lbl_in_progress">In Progress</string>
+    <string name="lbl_create_additional_pages">Create additional\npages</string>
+    <string name="lbl_date">03 days | Dec 18, 2019</string>
+    <string name="lbl_progress">Progress</string>
+    <string name="lbl_progress_time">3h</string>
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margin_medium_2"
+    android:background="@drawable/background_task"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lblProgressStatus"
+        android:text="@string/lbl_progress"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="@dimen/text_small"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin_medium_3"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lblProgressTime"
+        android:text="@string/lbl_progress_time"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/lblProgressStatus"
+        android:layout_alignBottom="@id/lblProgressStatus"
+        android:gravity="center"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="@dimen/text_small"
+        android:textStyle="bold"
+        android:textColor="@color/color_dark_grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lblProgressTitle"
+        android:text="Contact Page"
+        android:layout_below="@id/lblProgressStatus"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:fontFamily="@font/roboto_regular"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgComment"
+        android:layout_below="@id/lblProgressTitle"
+        android:layout_alignTop="@id/imgProfile"
+        android:layout_alignBottom="@id/imgProfile"
+        app:srcCompat="@drawable/comment"
+        android:tint="@color/color_dark_grey"
+        android:layout_width="@dimen/margin_medium_3"
+        android:layout_height="@dimen/margin_medium_3"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lblCommentCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/imgComment"
+        android:layout_alignBottom="@id/imgComment"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_toEndOf="@id/imgComment"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:text="6"
+        android:textSize="@dimen/text_regular_2x" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgClip"
+        android:layout_alignTop="@id/imgProfile"
+        android:layout_alignBottom="@id/imgProfile"
+        android:layout_toEndOf="@id/lblCommentCount"
+        app:srcCompat="@drawable/paperclip"
+        android:tint="@color/color_dark_grey"
+        android:layout_width="@dimen/margin_medium_3"
+        android:layout_height="@dimen/margin_medium_3"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lblClipCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/imgComment"
+        android:layout_alignBottom="@id/imgComment"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_toEndOf="@id/imgClip"
+        android:fontFamily="@font/roboto_regular"
+        android:text="6"
+        android:textSize="@dimen/text_regular_2x" />
+
+    <com.stone.module16.views.components.CircularImageView
+        android:id="@+id/imgProfile"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/avator1"
+        app:strokeWidth="4dp"
+        app:borderColor="@color/white"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/lblProgressTitle"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lblNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/imgProfile"
+        android:gravity="center"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="@dimen/text_regular_2x"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:text="No 194"
+        android:layout_alignTop="@id/imgProfile"
+        android:layout_alignBottom="@id/imgProfile"/>
+
+
+</RelativeLayout>
