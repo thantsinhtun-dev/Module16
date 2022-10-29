@@ -1,7 +1,8 @@
-package com.stone.module16
+package com.stone.module16.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.stone.module16.R
 import com.stone.module16.adapters.ProfileAdapter
 import com.stone.module16.adapters.TaskAdapter
 import com.stone.module16.utils.profileList
@@ -15,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         setupRecyclerView()
+
     }
     private fun setupRecyclerView() {
 

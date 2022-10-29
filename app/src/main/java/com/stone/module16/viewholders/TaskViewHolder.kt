@@ -1,11 +1,13 @@
 package com.stone.module16.viewholders
 
+import android.content.res.Resources
 import android.view.View
+import androidx.appcompat.content.res.AppCompatResources
 import androidx.core.content.ContextCompat
-import androidx.core.graphics.drawable.DrawableCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.stone.module16.R
 import com.stone.module16.data.TaskVO
+import com.stone.module16.utils.TaskLine
 import com.stone.module16.utils.done
 import com.stone.module16.utils.inProgress
 import com.stone.module16.utils.review
@@ -13,7 +15,7 @@ import kotlinx.android.synthetic.main.view_holder_task.view.*
 import kotlinx.android.synthetic.main.view_holder_task_list.view.*
 
 class TaskViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-    fun bind(taskVO: TaskVO) {
+    fun bind(taskVO: TaskVO, topLine: TaskLine, bottomLine: TaskLine) {
 
 
         when(taskVO.currentProgress){
@@ -23,6 +25,9 @@ class TaskViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         }
 
 
+
+        itemView.vTop.setBackgroundResource(topLine.background)
+        itemView.vBottom.setBackgroundResource(bottomLine.background)
 
         itemView.lblDate.text = taskVO.taskDate
         itemView.llTask.lblProgressStatus.text = taskVO.currentProgress

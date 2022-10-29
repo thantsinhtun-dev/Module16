@@ -6,4 +6,26 @@
     <string name="lbl_date">03 days | Dec 18, 2019</string>
     <string name="lbl_progress">Progress</string>
     <string name="lbl_progress_time">3h</string>
+    <string name="show_in_days">Show In Days</string>
+    <string name="lbl_save">Save</string>
+    <string name="lbl_create_new_task">Create New Task</string>
+    <string name="lbl_client">Client</string>
+    <string name="lbl_project_name">Project Name</string>
+    <string name="lbl_assignee">Assignee</string>
+    <string name="category">Category</string>
+    <string name="design">Design</string>
+    <string name="frontend">Frontend</string>
+    <string name="backend">Backend</string>
+    <string name="description">Description</string>
+    <string name="lbl_attachments">Attachments</string>
+    <string name="lbl_references_1">References_1</string>
+    <string name="lbl_size">68 KB</string>
+    <string name="create_task">Create Task</string>
+    <string name="lbl_project_duration">Project Duration</string>
+
+    <string-array name="teamB2B">
+        <item>Mobile Team</item>
+        <item>Web Team</item>
+        <item>Game Team</item>
+    </string-array>
 </resources>

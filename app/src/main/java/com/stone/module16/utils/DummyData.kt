@@ -14,6 +14,15 @@ const val frontEnd = "#Frontend"
 const val backEnd = "#Backend"
 const val mobile = "#Mobile"
 
+enum class TaskLine(val background:Int){
+    DOTTED(R.drawable.background_dotted),
+    WHITE(R.drawable.background_white_dash),
+    GRAY(R.drawable.background_black_dash)
+}
+
+
+
+
 
 val profileList = listOf(
     ProfileVO(id = 0, profileImage = R.drawable.avator1, name = "Gamer", position = ""),

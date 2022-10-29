@@ -31,17 +31,21 @@
         app:layout_constraintTop_toTopOf="parent"
         app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
 
-    <View
-        android:id="@+id/vTop"
-        android:layout_width="@dimen/width_timeline_pipe"
-        android:layout_height="0dp"
-        android:background="@color/color_dark_grey"
-        android:elevation="0dp"
-        android:translationZ="1dp"
-        app:layout_constraintEnd_toEndOf="@id/imgCircleIndicator"
-        app:layout_constraintStart_toStartOf="@id/imgCircleIndicator"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/guideline2"/>
+
+        <View
+            android:id="@+id/vTop"
+            android:layout_width="5dp"
+            android:layout_height="0dp"
+            android:elevation="0dp"
+            android:translationZ="1dp"
+            android:background="@drawable/background_dotted"
+            android:layerType="software"
+            app:layout_constraintEnd_toEndOf="@id/imgCircleIndicator"
+            app:layout_constraintStart_toStartOf="@id/imgCircleIndicator"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/guideline2"
+            />
+
     <View
         android:id="@+id/vBottom"
         android:layout_width="@dimen/width_timeline_pipe"
