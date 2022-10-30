@@ -49,13 +49,21 @@ class LineProgressIndicator @JvmOverloads constructor(
     override fun onDraw(canvas: Canvas?) {
         super.onDraw(canvas)
 
-        canvas?.drawLine(0f, height/2f, width.toFloat(), height/2f, inactivePaint)
+        canvas?.drawLine(
+            0f,
+            height/2f,
+            width.toFloat(),
+            height/2f,
+            inactivePaint)
 
         val progressValue = ((width * progress) / max).toFloat()
 
-
-        canvas?.drawLine(0f, height/2f, progressValue, height/2f, activePaint)
-
+        canvas?.drawLine(
+            0f,
+            height/2f,
+            progressValue,
+            height/2f,
+            activePaint)
 
     }
 
