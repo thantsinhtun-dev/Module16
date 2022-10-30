@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgClose"
+        android:layout_width="@dimen/margin_xxlarge"
+        android:layout_height="@dimen/margin_xxlarge"
+        app:srcCompat="@drawable/ic_baseline_close_24"
+        android:scaleType="centerCrop"
+        android:layout_marginHorizontal="@dimen/margin_medium_2"
+        android:background="@color/color_light_grey"
+        android:layout_alignParentEnd="true"
+        app:contentPadding="@dimen/margin_medium"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+        />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_below="@id/imgClose"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/margin_xxlarge"
+        android:layout_width="@dimen/margin_medium_2"
+        android:layout_height="wrap_content">
+
+        <com.stone.module16.views.components.CircularImageView
+            android:id="@+id/circularImageView"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/avator1"
+            android:translationZ="2dp"
+            app:strokeColor="@color/white"
+            app:strokeWidth="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/centerView"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:translationZ="1dp"
+            android:layout_marginBottom="@dimen/margin_xxlarge"
+            android:background="@color/color_transparent"
+            app:layout_constraintBottom_toBottomOf="@+id/circularImageView"
+            app:layout_constraintEnd_toEndOf="@+id/circularImageView"
+            app:layout_constraintStart_toStartOf="@+id/circularImageView"
+            app:layout_constraintTop_toTopOf="@+id/circularImageView" />
+
+        <RelativeLayout
+            android:id="@+id/rlProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_description"
+            app:layout_constraintTop_toBottomOf="@id/centerView">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_margin="@dimen/margin_medium_2"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:layout_marginEnd="@dimen/margin_medium_2"
+                android:layout_marginBottom="@dimen/margin_medium_2"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lblClosedTasks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/close_task"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_dark_grey"
+                    android:textSize="@dimen/text_regular"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lblClosedTasksCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="361"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_regular_2x"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/margin_medium_2"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:layout_marginEnd="@dimen/margin_medium_2"
+                android:layout_marginBottom="@dimen/margin_medium_2"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lblOpenTasks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/open_task"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_dark_grey"
+                    android:textSize="@dimen/text_regular"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lblOpenTasksCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="361"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_regular_2x"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/llInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/margin_top_profile_text_section"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvProfileName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="Butler"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_primary"
+                    android:textSize="@dimen/text_regular_3x"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvProfilePosition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="UI Designer"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_dark_grey"
+                    android:textSize="@dimen/text_regular_2x"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/rlTabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llInfo"
+                android:background="@color/white"
+                android:paddingTop="@dimen/margin_medium_2">
+
+                <com.stone.module16.views.components.CircularImageView
+                    android:layout_width="@dimen/margin_xxlarge"
+                    android:layout_height="@dimen/margin_xxlarge"
+                    android:layout_marginStart="@dimen/margin_medium_2"
+                    android:padding="@dimen/padding_profile_button"
+                    android:tint="@color/color_accent_green"
+                    app:srcCompat="@drawable/ic_baseline_share_24"
+                    app:strokeColor="@color/color_accent_green" />
+
+                <com.stone.module16.views.components.CircularImageView
+                    android:layout_width="@dimen/margin_xxlarge"
+                    android:layout_height="@dimen/margin_xxlarge"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/margin_medium_2"
+                    android:padding="@dimen/padding_profile_button"
+                    android:tint="@color/color_accent_green"
+                    app:srcCompat="@drawable/ic_baseline_credit_score_24"
+                    app:strokeColor="@color/color_accent_green" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnProfileMessage"
+                    android:layout_width="@dimen/width_message_button"
+                    android:layout_height="@dimen/height_message_button"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="@color/color_accent_green"
+                    android:elevation="0dp"
+                    android:text="Message"
+                    app:cornerRadius="@dimen/margin_large" />
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabLayoutProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnProfileMessage"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@color/white"
+                    app:tabIndicatorColor="@color/color_accent_green"
+                    app:tabIndicatorHeight="3dp"
+                    app:tabMinWidth="@dimen/width_tab"
+                    app:tabMode="scrollable"
+                    app:tabSelectedTextColor="@color/color_primary"
+                    app:tabTextColor="@color/color_dark_grey" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_light_grey"
+                android:layout_marginBottom="@dimen/margin_xxlarge"
+                android:layout_below="@id/rlTabLayout">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvProfileSheet"
+                android:layout_marginVertical="@dimen/margin_medium_2"
+                android:layout_marginHorizontal="@dimen/margin_medium_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/view_holder_task"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</RelativeLayout>

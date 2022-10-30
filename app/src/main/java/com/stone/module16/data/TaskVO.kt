@@ -8,5 +8,5 @@ data class TaskVO(
     val taskCount: Int,
     val taskCategory: String,
     val taskDate : String,
-    val profile : Int
+    var profile : Int
 )

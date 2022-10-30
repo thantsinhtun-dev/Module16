@@ -28,7 +28,7 @@ val profileList = listOf(
     ProfileVO(id = 0, profileImage = R.drawable.avator1, name = "Gamer", position = ""),
     ProfileVO(id = 1, profileImage = R.drawable.avator2, name = "Developer", position = ""),
     ProfileVO(id = 2, profileImage = R.drawable.avator3, name = "Hllo", position = ""),
-    ProfileVO(id = 3, profileImage = R.drawable.plus, name = "aaa", position = ""),
+    ProfileVO(id = 3, profileImage = R.drawable.plus, name = "plus", position = ""),
 )
 
 

@@ -28,4 +28,8 @@
         <item>Web Team</item>
         <item>Game Team</item>
     </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="close_task">Close Task</string>
+    <string name="open_task">Open Task</string>
 </resources>
